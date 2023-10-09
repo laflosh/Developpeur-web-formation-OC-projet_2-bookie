@@ -58,6 +58,38 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+.entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
+
+}
+
+.entete img{
+    width: 68px;
+    height: 23px;
+    padding: 1%;
+    margin-bottom: 4%;
+}
+
+nav {
+    font-size: 0.9em;
+    display: flex;
+    gap: 55px;
+    padding-top: 1%;
+}
+
+nav a{
+    
+}
+
+.lien-hover:hover{
+    color: #0065FC;
+    border-top: #0065FC solid 1px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -121,6 +153,7 @@ a {
     margin-bottom: 5px;
 }
 
+/******Footer***********/
 
 
 
