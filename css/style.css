@@ -523,13 +523,23 @@ footer span{
     
     form button{
         font-size: 0.9em;
-        width: 15%;
+        width: 22%;
         border-radius: 5px;
         content: none;
     }
     
     .form-recherche i{
         padding: 4%;
+    }
+
+    .form-recherche #texte{
+        display: none;
+    }
+
+    .form-recherche #loupe{
+        display: inline;
+        color: white;
+        background-color:#0065FC;
     }
 
     .filtres{
@@ -540,14 +550,6 @@ footer span{
         width: 45%;
         text-align: left;
         font-size: 0.8em;
-    }
-
-    .form-recherche #texte{
-        display: none;
-    }
-
-    .form-recherche #loupe{
-        display: inline;
     }
 
     .filtres i{
