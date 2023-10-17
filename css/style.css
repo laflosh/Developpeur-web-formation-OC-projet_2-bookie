@@ -82,14 +82,14 @@ nav {
     padding-top: 1%;
 }
 
-.lien-hover {
-    border-top: #ffffff solid 1px;
-}
-
 nav a {
     display: block;
     height : 75px;
     padding-top: 5%;
+}
+
+.lien-hover {
+    border-top: #ffffff solid 1px;
 }
 
 .lien-hover:hover{
