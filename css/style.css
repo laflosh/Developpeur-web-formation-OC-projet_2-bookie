@@ -16,6 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -59,15 +61,8 @@ a {
 }
 
 /****** Header ***********/
-.entete{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: baseline;
 
-}
-
-.entete img{
+header img{
     width: 68px;
     height: 23px;
     padding: 1%;
@@ -75,21 +70,27 @@ a {
     margin-bottom: 3%;
 }
 
-nav {
-    font-size: 0.9em;
+header{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
     gap: 55px;
-    padding-top: 1%;
+    padding-top: 1.75%;
+}
+
+nav a {
+    font-size: 0.9em;
+    padding-top: 1.75%;
 }
 
 .lien-hover {
     border-top: #ffffff solid 1px;
-}
-
-nav a {
-    display: block;
-    height : 75px;
-    padding-top: 5%;
 }
 
 .lien-hover:hover{
