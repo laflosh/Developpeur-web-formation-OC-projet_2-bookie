@@ -32,6 +32,17 @@ a {
     text-decoration: none;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+figure, figcaption{
+    margin: 0;
+    padding: 0;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -73,20 +84,20 @@ header img{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 nav{
     display: flex;
     flex-direction: row;
     gap: 55px;
-    padding-top: 1.75%;
 }
 
 nav a {
+    display: block;
     font-size: 0.9em;
-    padding-top: 1.75%;
+    padding-top: 8.5%;
+
 }
 
 .lien-hover {
@@ -128,15 +139,10 @@ nav a {
     margin-top: 2%;
 }
 
-.form-recherche form{
-    display: flex;
-    flex-direction: row;
-}
-
 form input{
     border: solid #F2F2F2 0.5px;
     color: black;
-    width: 45%;
+    width: 12%;
     font-weight: 800;
     text-align: center;
 }
@@ -146,7 +152,7 @@ form button{
     color: white;
     font-size: 0.9em;
     font-weight: bold;
-    width: 50%;
+    width: 10%;
     border-style: none;
     border-radius: 0px 15px 15px 0px / 0px 15px 15px 0px;
 }
@@ -172,6 +178,12 @@ form button{
     margin-bottom: 2%;
 }
 
+.filtres ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 .btn-filtre{
     background-color: white;
     font-weight: bolder;
@@ -192,6 +204,7 @@ form button{
 }
 
 .filtres span{
+    display: block;
     font-size: 0.9em;
     font-weight: 700;
 }
@@ -206,6 +219,7 @@ form button{
     align-items: center;
     margin-bottom: 2%;
     gap: 15px;
+    font-size: 0.8em;
 }
 
 .elm-info i{
@@ -374,8 +388,11 @@ form button{
 .activites-card .card-title{
     display: flex;
     justify-content: flex-start;
-    height: 19px;
+    align-content: center;
+    height: 38px;
+    margin-top: 20px;
     margin-left: 15px;
+    font-weight: 700;
 }
 
 /******Footer***********/
@@ -395,9 +412,14 @@ footer span{
     font-size: 0.9em;
     font-weight: 700;
     padding-top: 12px;
+    padding-bottom: 3px;
 }
 
-.contenu-footer p{
+footer li{
+    padding: 5px 0;
+}
+
+.contenu-footer a{
     font-size: 0.8em;
 }
 
@@ -407,13 +429,15 @@ footer span{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    form button{
+        width: 13%;
+    }
 
     .filtres{
         flex-wrap: wrap;
     }
 
     .filtres span{
-        display: block;
         width: 100%;
     }
 
@@ -476,12 +500,12 @@ footer span{
 
     }
 
-    .entete{
+    header{
         flex-direction: column;
     }
 
-    .entete img{
-        margin-left: 33%;
+    header img{
+        margin-left: 36%;
         padding: 5%;
     }
 
@@ -553,8 +577,15 @@ footer span{
         padding: 3% 0;
     }
 
+    .filtres ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 90%;
+        padding: 0 3%;
+    }
+
     .btn-filtre{
-        width: 45%;
+        width: 100%;
         text-align: center;
         font-size: 0.8em;
     }
