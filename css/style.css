@@ -265,7 +265,7 @@ form button{
 }
 .hebergements-cards .card{
     width: 100%;
-    height: 190px;
+    height: 100%;
 }
 
 .hebergements-cards img{
@@ -283,7 +283,7 @@ form button{
 }
 
 .hebergements-cards .card-rating{
-    margin-top: 11px;
+    margin-top: 2px;
 }
 
 .hebergements-cards .card-title{
@@ -586,7 +586,7 @@ footer li{
 
     .btn-filtre{
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 0.8em;
     }
 
