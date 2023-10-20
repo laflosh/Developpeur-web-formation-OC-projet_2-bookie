@@ -654,6 +654,11 @@ footer li{
         height: 200px;
     }
 
+    .activites-card .card-title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     .activites-card a{
         width: 100%;
     }
